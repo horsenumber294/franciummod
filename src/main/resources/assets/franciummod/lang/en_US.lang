@@ -1,0 +1,9 @@
+itemGroup.franciummod=Francium Mod
+
+item.franciummod.tungsten_hexachloride.name=Tungsten Hexachloride
+item.franciummod.tungsten_carbyne_chloride.name=Tungsten Carbyne Chloride
+item.franciummod.tungsten_carbyne_fluoride.name=Tungsten Carbyne Fluoride
+item.franciummod.ptcfc_sheet.name=PTCFC Polymer Sheet
+item.franciummod.ptcfc_plate.name=PTCFC Coated Plate
+
+tile.franciummod.ptcfc_lined_block.name=PTCFC Lined Block

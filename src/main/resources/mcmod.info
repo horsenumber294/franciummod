@@ -1,0 +1,10 @@
+[
+  {
+    "modid":       "franciummod",
+    "name":        "Francium Mod",
+    "description": "Adds advanced materials including PTCFC polymer coatings for NTM chemical plants.",
+    "version":     "1.0.0",
+    "mcversion":   "1.7.10",
+    "dependencies": ["hbm"]
+  }
+]
