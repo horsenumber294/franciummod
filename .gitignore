@@ -1,0 +1,19 @@
+# Gradle
+.gradle/
+build/
+
+# Forge workspace
+eclipse/
+run/
+.idea/
+*.iml
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep libs folder tracked if it exists (for NTM dev jar)
+!libs/
+libs/*.jar
+!libs/.gitkeep

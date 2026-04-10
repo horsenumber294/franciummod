@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "https://maven.minecraftforge.net" }
+        maven { url = "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version      = "${mod_version}"
+group        = "com.franciummod"
+archivesBaseName = "franciummod"
+
+minecraft {
+    version = "${minecraft_version}-${forge_version}"
+    runDir  = "run"
+    mappings = "stable_22"
+}
+
+dependencies {
+    // Place NTM dev jar in /libs if you need to compile against NTM classes
+    // compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+processResources {
+    inputs.property "version",   project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version':   project.version,
+               'mcversion': project.minecraft.version
+    }
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
