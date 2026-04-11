@@ -29,12 +29,7 @@ public class FranciumMod {
     )
     public static CommonProxy proxy;
 
-    public static final CreativeTabs CREATIVE_TAB = new CreativeTabs("franciummod") {
-        @Override
-        public Item getTabIconItem() {
-            return ModItems.ptcfcPlate;
-        }
-    };
+    public static CreativeTabs CREATIVE_TAB = null;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {

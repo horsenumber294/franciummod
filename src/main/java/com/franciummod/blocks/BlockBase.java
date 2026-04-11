@@ -10,19 +10,14 @@ public class BlockBase extends Block {
 
     private final String registryName;
 
-    public BlockBase(String registryName, String displayName, Material material,
-                     float hardness, float resistance) {
-        super(material);
+    public BlockBase(String registryName, String displayName) {
+        super(Material.rock);
         this.registryName = registryName;
         setBlockName(FranciumMod.MODID + "." + registryName);
         setBlockTextureName(FranciumMod.MODID + ":" + registryName);
         setCreativeTab(FranciumMod.CREATIVE_TAB);
-        setHardness(hardness);
-        setResistance(resistance);
-    }
-
-    public BlockBase(String registryName, String displayName) {
-        this(registryName, displayName, Material.iron, 5.0f, 2000.0f);
+        setHardness(5.0f);
+        setResistance(2000.0f);
     }
 
     public String getModRegistryName() {
